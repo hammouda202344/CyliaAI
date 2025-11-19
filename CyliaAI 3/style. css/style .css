@@ -1,0 +1,124 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f5f7fa;
+  color: #333;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1f2937;
+}
+
+/* Tool list styling */
+#tool-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#tool-list li {
+  cursor: pointer;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #e5e7eb;
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+
+#tool-list li:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+#tool-list li.active {
+  background: #3b82f6;
+  color: white;
+}
+
+/* Input and buttons */
+#input-text {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto 15px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  resize: none;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background: #833bf6;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+#loading {
+  text-align: center;
+  font-weight: 600;
+  color: #3b82f6;
+  margin-top: 10px;
+}
+
+/* Output cards */
+#output-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.output-card {
+  max-width: 600px;
+  width: 100%;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  word-wrap: break-word;
+  transition: all 0.2s ease;
+}
+
+.output-card img, .output-card video, .output-card audio {
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  #tool-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
